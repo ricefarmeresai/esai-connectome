@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+
+<html lang=”eng”> 
+
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a website about web development."> 
+    <meta name="keywords" content="HTML, website, beginner guide">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <style>
+        body {
+            background-image: url('renmeibackgrounds/renmeibackground4.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        header {
+            background-color: rgba(104, 84, 62, 0.8); /* Semi-transparent dark background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            height: 150px; /* Set a fixed height for the header */
+            display: flex; /* Center content vertically */
+            flex-direction: column;
+            justify-content: center; /* Center header content */
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative; /* Adjust for layout */
+            bottom: 0;
+            width: 100%; /* Full width */
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 equal width columns*/
+            gap: 70px;
+            padding: 20px; /* Add some padding around the grid */
+            margin-top: 20px; /* Ensure spacing from the header */
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 800px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .image-grid {
+                grid-template-columns: repeat(1, 1fr); /* 1 column on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mental Representations Anthology</h1>
+        <p>An active archive of all of my artwork.</p>
+    </header>
+
+    <div class="image-grid">
+        <img src="artimages/katanagirl.jpg" alt="Image 1">
+        <img src="artimages/luvsic.jpg" alt="Image 2">
+        <img src="artimages/monkdecap.jpg" alt="Image 3">
+        <img src="artimages/lockheed.jpg" alt="Image 4">
+        <img src="artimages/watercolorgirl.jpg" alt="Image 6">
+        <img src="artimages/vagabond.jpg" alt="Image 5">
+        <img src="artimages/takkun.jpg" alt="Image 7">
+    </div>
+
+</body>
+</html>
